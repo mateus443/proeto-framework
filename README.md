@@ -58,11 +58,15 @@ Senha: password
 
 
 php artisan storage:link
+
 1. Inicie o Servidor
+2. 
 Execute o servidor de desenvolvimento:
 
 php artisan serve
+
 2. Faça Login
+
 Tente fazer login com:
 
 Usuário: admin
