@@ -4,14 +4,14 @@
 define('LARAVEL_START', microtime(true));
 
 /*
-|--------------------------------------------------------------------------
-| Register The Auto Loader
+|-------------------------------------------------------------------------
+| Registre o carregador automático
 |--------------------------------------------------------------------------
 |
-| Composer provides a convenient, automatically generated class loader
-| for our application. We just need to utilize it! We'll require it
-| into the script here so that we do not have to worry about the
-| loading of any of our classes manually. It's great to relax.
+| O Composer fornece um carregador de classe conveniente e gerado automaticamente
+| para nosso aplicativo. Só precisamos utilizá-lo! Vamos exigir isso
+| no script aqui para que não tenhamos que nos preocupar com o
+| carregamento de nenhuma de nossas classes manualmente. É ótimo relaxar.
 |
 */
 
@@ -20,13 +20,13 @@ require __DIR__.'/vendor/autoload.php';
 $app = require_once __DIR__.'/bootstrap/app.php';
 
 /*
-|--------------------------------------------------------------------------
-| Run The Artisan Application
+|-------------------------------------------------------------------------
+| Execute o aplicativo Artisan
 |--------------------------------------------------------------------------
 |
-| When we run the console application, the current CLI command will be
-| executed in this console and the response sent back to a terminal
-| or another output device for the developers. Here goes nothing!
+| Quando executarmos o aplicativo de console, o comando CLI atual será
+| executado neste console e a resposta será enviada de volta para um terminal
+| ou outro dispositivo de saída para os desenvolvedores. Aqui vai nada!
 |
 */
 
@@ -38,13 +38,13 @@ $status = $kernel->handle(
 );
 
 /*
-|--------------------------------------------------------------------------
-| Shutdown The Application
+|-------------------------------------------------------------------------
+| Desligar o aplicativo
 |--------------------------------------------------------------------------
 |
-| Once Artisan has finished running, we will fire off the shutdown events
-| so that any final work may be done by the application before we shut
-| down the process. This is the last thing to happen to the request.
+| Assim que o Artisan terminar de executar, dispararemos os eventos de desligamento
+| para que qualquer trabalho final possa ser feito pelo aplicativo antes de desligarmos
+| o processo. Esta é a última coisa a acontecer com a solicitação.
 |
 */
 
